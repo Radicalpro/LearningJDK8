@@ -243,7 +243,7 @@
     <property name="SearchEverywhereHistoryKey" value="Collectors&#9;PSI&#9;JAVA://java.util.stream.Collectors&#10;collector&#9;PSI&#9;JAVA://java.util.stream.Collector&#10;Stream&#9;PSI&#9;JAVA://java.util.stream.Stream&#10;Collection&#9;PSI&#9;JAVA://java.util.Collection" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533022525185" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533022588328" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
