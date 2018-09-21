@@ -68,7 +68,7 @@ public class Test {
         //拿到Optional，判断是否为null进行取值
         studentOptional = classGrades.stream()
                 .flatMap(classGrade -> classGrade.getStudents().stream()).sorted().findFirst();
-        if(studentOptional.isPresent()){
+        if (studentOptional.isPresent()) {
             student = studentOptional.get();
         }
         //为空的话，自己new 值
@@ -78,6 +78,16 @@ public class Test {
         student = classGrades.stream()
                 .flatMap(classGrade -> classGrade.getStudents().stream()).sorted().findFirst().orElseThrow(NullPointerException::new);
 
+
+        students.stream().collect(Collectors.toMap(
+                Student::getId,
+                Student::getName,
+                (oldStudent, newStudent) -> oldStudent
+        ));
+
+        students.stream().map(Student::getAge).reduce(0, (s1, s2) -> s1 + s2);
+
+        students.parallelStream().map(Student::getAge).reduce(0, (s1, s2) -> s1 + s2);
 
     }
 }
